@@ -22,7 +22,8 @@ spec:
     spec:
       containers:
       - image: dockercoins/hasher:v0.1
-        imagePullPolicy: IfNotPrese
+        imagePullPolicy: IfNotPresent
+        name: hasher
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
