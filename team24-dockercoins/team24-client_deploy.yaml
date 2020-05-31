@@ -21,7 +21,7 @@ spec:
         app: team24-client
     spec:
       containers:
-      - image: arifirst/team24-client:v1
+      - image: toeikanta/flight-booking-frontend:v0.4
         imagePullPolicy: IfNotPresent
         name: team24-client
       dnsPolicy: ClusterFirst

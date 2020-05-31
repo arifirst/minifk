@@ -15,4 +15,3 @@ spec:
     app: team24-backend
   sessionAffinity: None
   type: LoadBalancer
-
