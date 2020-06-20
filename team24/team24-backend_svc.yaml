@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    fluxcd.io/sync-checksum: 3173feb1ddaaf8379a7099dbaba4473a7ce2d2c4
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"fluxcd.io/sync-checksum":"3173feb1ddaaf8379a7099dbaba4473a7ce2d2c4"},"labels":{"app":"team24-backend","fluxcd.io/sync-gc-mark":"sha256.l3bcg-Cyr2C05pm3uuKnvVH0Hi6XzhkYFReLVe6mHiA"},"name":"team24-backend","namespace":"default"},"spec":{"externalTrafficPolicy":"Cluster","ports":[{"port":9000,"protocol":"TCP","targetPort":9000}],"selector":{"app":"team24-backend"},"sessionAffinity":"None","type":"LoadBalancer"}}
+  creationTimestamp: "2020-05-24T14:58:47Z"
+  labels:
+    app: team24-backend
+    fluxcd.io/sync-gc-mark: sha256.l3bcg-Cyr2C05pm3uuKnvVH0Hi6XzhkYFReLVe6mHiA
+  name: team24-backend
+  namespace: default
+  resourceVersion: "982"
+  selfLink: /api/v1/namespaces/default/services/team24-backend
+  uid: 11e8fac4-9dcf-11ea-9c5e-0242d610f91a
+spec:
+  clusterIP: 10.105.201.228
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 30751
+    port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    app: team24-backend
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 172.17.0.200
