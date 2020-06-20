@@ -110,13 +110,8 @@ items:
         containers:
         - args:
           - --ssh-keygen-dir=/var/fluxd/keygen
-<<<<<<< HEAD
           - --git-url=https://github.com/arifirst/minifk.git
           - --git-branch=final1.15.9
-=======
-          - --git-url=https://github.com/arifirst/minifk.git
-          - --git-branch=final1.15.9
->>>>>>> 615519e65102eaf15db1479709b828a356a6b0de
           - --git-poll-interval=30s
           - --git-path=.
           - --git-readonly
