@@ -8,5 +8,5 @@ data:
     address-pools:
     - name: default
       protocol: layer2
-      addresses:
-      - 172.17.0.200-172.17.0.250
+      addresses:         
+        - 172.17.0.200-172.17.0.250
